@@ -52,7 +52,7 @@ export default function NewsletterPanel({
         <div className="grid gap-8 rounded-[2rem] border border-line/40 bg-[linear-gradient(120deg,rgba(91,104,82,0.96),rgba(122,135,112,0.92))] p-6 text-background shadow-float md:grid-cols-[1fr_auto] md:items-center md:p-10">
           <div>
             <span className="eyebrow text-background/80 before:bg-background/55">{eyebrow}</span>
-            <h2 className="mt-4 font-display text-[clamp(2rem,4vw,3.4rem)] leading-[0.98] tracking-[-0.04em]">
+            <h2 className="mt-4 font-display text-[clamp(2rem,4vw,3.4rem)] leading-[0.98] tracking-[-0.04em] text-goldAccent">
               {title}
             </h2>
             <p className="mt-4 max-w-2xl text-base leading-8 text-background/80">
@@ -73,13 +73,13 @@ export default function NewsletterPanel({
                     required
                     value={email}
                     onChange={(event) => setEmail(event.target.value)}
-                    placeholder="deine@email.de"
-                    className="min-h-[52px] flex-1 rounded-full border border-background/15 bg-background/12 px-5 text-background placeholder:text-background/60 focus:border-background/50 focus:ring-0"
+                    placeholder="Deine E-Mail-Adresse"
+                    className="min-h-[52px] flex-1 rounded-full border border-goldAccent/40 bg-background/12 px-5 text-background placeholder:text-background/60 focus:border-goldAccent focus:ring-0"
                   />
                   <button
                     type="submit"
                     disabled={status === 'loading'}
-                    className="min-h-[52px] rounded-full bg-background px-6 text-[0.78rem] uppercase tracking-[0.16em] text-sageDeep transition-transform hover:-translate-y-0.5 disabled:opacity-60"
+                    className="min-h-[52px] rounded-full bg-goldAccent px-6 text-[0.78rem] uppercase tracking-[0.16em] text-white transition-transform hover:-translate-y-0.5 disabled:opacity-60"
                   >
                     {status === 'loading' ? 'Senden...' : 'Anmelden'}
                   </button>
