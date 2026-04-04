@@ -15,9 +15,8 @@ export default function SiteFooter() {
               </span>
             </div>
             <p className="mt-5 max-w-xl text-sm leading-7 text-textMuted">
-              Diese Editorial-Version ist bewusst ruhiger, persönlicher und magaziniger gebaut.
-              Sie soll sich wie eine echte Marke anfühlen und nicht wie ein austauschbares
-              Wellness-Template.
+              Natürliche Impulse für Frauen ab 50. Ohne Hype, ohne Druck. Kräuter, Routinen
+              und kleine Veränderungen, die im echten Alltag wirklich tragen.
             </p>
           </div>
 

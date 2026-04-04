@@ -19,6 +19,7 @@ const config: Config = {
         sageDeep: withOpacity('--sage-deep'),
         sageWash: withOpacity('--sage-wash'),
         accent: withOpacity('--accent'),
+        goldAccent: withOpacity('--gold-accent'),
         textPrimary: withOpacity('--text-primary'),
         textMuted: withOpacity('--text-muted'),
         line: withOpacity('--line'),
@@ -32,8 +33,8 @@ const config: Config = {
         panel: '1.5rem',
       },
       fontFamily: {
-        display: ['Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', 'Georgia', 'serif'],
-        body: ['Segoe UI', 'Aptos', 'Helvetica Neue', 'Arial', 'sans-serif'],
+        display: ['var(--font-display)', 'Georgia', 'serif'],
+        body: ['var(--font-body)', 'Helvetica Neue', 'Arial', 'sans-serif'],
       },
     },
   },

@@ -265,13 +265,13 @@ export default function HomePage() {
               />
               <div className="mt-6 space-y-4 text-base leading-8 text-textMuted">
                 <p>
-                  In dieser Version steht Christiane deutlich stärker als Persönlichkeit im
-                  Mittelpunkt. Das macht die Marke glaubwürdiger, wärmer und weniger
-                  austauschbar.
+                  Christiane begleitet Frauen ab 50 mit Klarheit, Wärme und einem Blick,
+                  der nicht belehrt, sondern versteht. Seit Jahren gibt sie Impulse, die
+                  ohne großen Aufwand wirken.
                 </p>
                 <p>
-                  Die Seite darf zeigen, wofür sie steht: natürliche Wege, sanfte Stärke,
-                  ein erwachsener Ton und Inhalte, die nicht laut sein müssen, um zu wirken.
+                  Ihr Ansatz: natürliche Wege, sanfte Stärke und ein erwachsener Ton.
+                  Keine lauten Versprechen, sondern Erfahrung, der man vertraut.
                 </p>
               </div>
 

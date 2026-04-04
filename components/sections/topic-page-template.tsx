@@ -1,6 +1,8 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import type { TopicPageData } from '@/lib/topic-pages';
+import { getAllPosts } from '@/lib/posts';
 import SectionIntro from '@/components/ui/section-intro';
 
 type TopicPageTemplateProps = {
@@ -8,6 +10,12 @@ type TopicPageTemplateProps = {
 };
 
 export default function TopicPageTemplate({ page }: TopicPageTemplateProps) {
+  const posts = getAllPosts();
+  const relatedPosts = posts.filter((post) =>
+    post.category?.toLowerCase().includes(page.slug) ||
+    page.eyebrow.toLowerCase().includes(post.category?.toLowerCase() || '')
+  );
+
   return (
     <>
       <section className="pt-10 md:pt-14">
@@ -32,9 +40,9 @@ export default function TopicPageTemplate({ page }: TopicPageTemplateProps) {
                     {page.accentLine}
                   </p>
                   <p className="mt-4 text-sm leading-7 text-textMuted">
-                    Diese Unterseite ist im selben Editorial-Stil wie die Startseite gebaut:
-                    ruhiger, persönlicher und mit deutlich mehr Rhythmus als die bestehende
-                    Version.
+                    Alle Impulse auf dieser Seite sind so gedacht, dass sie ohne großen
+                    Aufwand in deinen Alltag passen. Ruhig anfangen, dranbleiben, spüren
+                    was sich verändert.
                   </p>
                 </div>
               </div>
@@ -78,6 +86,41 @@ export default function TopicPageTemplate({ page }: TopicPageTemplateProps) {
           </div>
         </div>
       </section>
+
+      {relatedPosts.length > 0 && (
+        <section className="py-10 md:py-16">
+          <div className="mx-auto w-[min(1240px,calc(100%-24px))] md:w-[min(1240px,calc(100%-40px))]">
+            <SectionIntro eyebrow="Aus dem Magazin" title="Passende Artikel zu diesem Thema" />
+            <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+              {relatedPosts.map((post) => (
+                <Link
+                  key={post.slug}
+                  href={`/blog/${post.slug}`}
+                  className="overflow-hidden rounded-[1.8rem] border border-line/60 bg-surface/80 shadow-panel transition-transform hover:-translate-y-1"
+                >
+                  <div className="relative aspect-[1.15]">
+                    <Image
+                      src={post.image || '/media/hero-bg.jpg'}
+                      alt={post.title}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                    />
+                  </div>
+                  <div className="p-5">
+                    <p className="text-[0.72rem] uppercase tracking-[0.18em] text-sageDeep">
+                      {post.category}
+                    </p>
+                    <h3 className="mt-3 font-display text-[1.5rem] leading-[1.02] tracking-[-0.03em] text-textPrimary">
+                      {post.title}
+                    </h3>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="py-4 md:py-10">
         <div className="mx-auto w-[min(1240px,calc(100%-24px))] md:w-[min(1240px,calc(100%-40px))]">

@@ -1,8 +1,12 @@
 import type { Metadata } from 'next';
+import { Lora, Raleway } from 'next/font/google';
 import '@/app/globals.css';
 import SiteHeader from '@/components/layout/site-header';
 import SiteFooter from '@/components/layout/site-footer';
 import { siteConfig } from '@/lib/site';
+
+const lora = Lora({ subsets: ['latin'], weight: ['400', '500', '600', '700'], variable: '--font-display' });
+const raleway = Raleway({ subsets: ['latin'], weight: ['300', '400', '500', '600', '700'], variable: '--font-body' });
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
@@ -36,14 +40,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de">
-      <body>
+      <body className={`${lora.variable} ${raleway.variable}`}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
         />
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:rounded-lg focus:bg-sageDeep focus:px-4 focus:py-2 focus:text-background"
+        >
+          Zum Inhalt springen
+        </a>
         <div className="relative min-h-screen overflow-hidden">
           <SiteHeader />
-          <main className="relative z-10">{children}</main>
+          <main id="main" className="relative z-10">{children}</main>
           <SiteFooter />
         </div>
       </body>
