@@ -11,7 +11,7 @@ export default function EmpfehlungenPage() {
             <SectionIntro
               eyebrow="Empfehlungen"
               title="Was ich selbst weiterempfehlen würde, ruhig kuratiert statt laut verkauft."
-              description="Auch diese Seite ist neu inszeniert: weniger Vergleichsportal, mehr persönliche Auswahl mit klarer, ruhiger Haltung."
+              description="Persönlich ausgewählt, ehrlich eingeordnet. Produkte und Ressourcen, die Christiane selbst nutzt oder weiterempfehlen würde."
             />
           </div>
         </div>
@@ -28,7 +28,7 @@ export default function EmpfehlungenPage() {
                   <div className="inline-flex rounded-full border border-line/60 bg-surface/80 p-3 text-sageDeep shadow-panel">
                     <Icon className="h-5 w-5" strokeWidth={1.5} />
                   </div>
-                  <h2 className="font-display text-[2rem] leading-[1.02] tracking-[-0.03em] text-textPrimary">
+                  <h2 className="font-display text-[2rem] leading-[1.02] tracking-[-0.03em] text-goldAccent">
                     {category.title}
                   </h2>
                 </div>
@@ -48,7 +48,7 @@ export default function EmpfehlungenPage() {
                           href={item.href}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="mt-5 inline-flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.16em] text-sageDeep"
+                          className="mt-5 inline-flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.16em] text-goldAccent"
                         >
                           Mehr erfahren
                           <ArrowRight className="h-4 w-4" strokeWidth={1.5} />
