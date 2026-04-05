@@ -1,6 +1,58 @@
-import { ArrowRight } from 'lucide-react';
+'use client';
+
+import { useState } from 'react';
+import Image from 'next/image';
+import { ArrowRight, ChevronDown } from 'lucide-react';
 import SectionIntro from '@/components/ui/section-intro';
-import { recommendationCategories } from '@/lib/collections';
+import { recommendationCategories, solisProducts } from '@/lib/collections';
+
+function SolisCard({ product }: { product: typeof solisProducts[number] }) {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <article className="overflow-hidden rounded-[1.8rem] border border-line/60 bg-surface/80 shadow-panel">
+      <div className="relative aspect-square">
+        <Image
+          src={product.image}
+          alt={product.title}
+          fill
+          className="object-cover"
+          sizes="(max-width: 768px) 100vw, 50vw"
+        />
+      </div>
+      <div className="p-6">
+        <h3 className="font-display text-[1.6rem] leading-[1.02] tracking-[-0.03em] text-goldAccent">
+          {product.title}
+        </h3>
+        <p className="mt-3 text-sm leading-7 text-textMuted">{product.description}</p>
+        <div className="mt-5 flex flex-wrap gap-3">
+          <a
+            href={product.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.16em] text-goldAccent"
+          >
+            Zum Produkt
+            <ArrowRight className="h-4 w-4" strokeWidth={1.5} />
+          </a>
+          <button
+            type="button"
+            onClick={() => setOpen(!open)}
+            className="inline-flex items-center gap-1 text-[0.76rem] uppercase tracking-[0.16em] text-textMuted"
+          >
+            Produktinfo
+            <ChevronDown className={`h-4 w-4 transition-transform ${open ? 'rotate-180' : ''}`} strokeWidth={1.5} />
+          </button>
+        </div>
+        {open && (
+          <div className="mt-4 whitespace-pre-line rounded-[1rem] border border-line/40 bg-backgroundSoft/60 p-4 text-xs leading-6 text-textMuted">
+            {product.details}
+          </div>
+        )}
+      </div>
+    </article>
+  );
+}
 
 export default function EmpfehlungenPage() {
   return (
@@ -13,6 +65,32 @@ export default function EmpfehlungenPage() {
               title="Was ich selbst weiterempfehlen würde, ruhig kuratiert statt laut verkauft."
               description="Persönlich ausgewählt, ehrlich eingeordnet. Produkte und Ressourcen, die Christiane selbst nutzt oder weiterempfehlen würde."
             />
+          </div>
+        </div>
+      </section>
+
+      <section className="py-14 md:py-20">
+        <div className="mx-auto w-[min(1240px,calc(100%-24px))] md:w-[min(1240px,calc(100%-40px))]">
+          <SectionIntro
+            eyebrow="Solis Superfoods"
+            title="Christianes tägliche Begleiter aus reiner Pflanzenkraft."
+          />
+
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            {solisProducts.map((product) => (
+              <SolisCard key={product.slug} product={product} />
+            ))}
+          </div>
+
+          <div className="mt-10 overflow-hidden rounded-[2rem] border border-line/60 shadow-panel">
+            <video
+              controls
+              preload="metadata"
+              className="w-full"
+              poster="/images/shop/solis-green-medley.jpg"
+            >
+              <source src="/media/solis-brand.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
       </section>
