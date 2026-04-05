@@ -59,37 +59,74 @@ export default function SolisProductPage({
               {product.description}
             </p>
 
-            <div className="mt-6 flex items-center gap-3">
-              <span
-                title="Vegan"
-                className="flex h-10 w-10 cursor-default items-center justify-center rounded-full bg-[#1a7a4f] text-[0.65rem] font-bold tracking-wide text-white"
-              >
-                V
-              </span>
-              <span
-                title="Glutenfrei"
-                className="flex h-10 w-10 cursor-default items-center justify-center rounded-full bg-[#1a7a4f] text-[0.65rem] font-bold tracking-wide text-white"
-              >
-                GF
-              </span>
-              <span
-                title="Geeignet für Vegetarier"
-                className="flex h-10 w-10 cursor-default items-center justify-center rounded-full bg-[#1a7a4f] text-white"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="h-5 w-5"
-                >
-                  <path d="M7 20h10" />
-                  <path d="M10 20c5.5-2.5 8-8.5 8-14-3 0-7 1-9 4.5C7 7 4.5 4 2 4c0 5.5 2.5 11.5 8 16z" />
-                </svg>
-              </span>
+            <div className="mt-6 flex items-center gap-4">
+              {[
+                {
+                  label: 'Vegan',
+                  icon: (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="h-5 w-5"
+                    >
+                      <path d="M2 2c0 9.94 5.06 18 12 18" />
+                      <path d="M22 2c-2.4 5.33-6.67 10-12 12" />
+                      <path d="M22 2 2 22" />
+                    </svg>
+                  ),
+                },
+                {
+                  label: 'Glutenfrei',
+                  icon: (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="h-5 w-5"
+                    >
+                      <path d="M2 22 17 7" />
+                      <path d="M9 8c1.5-2 3.5-3 6-3" />
+                      <path d="M15 14c-2 2.5-3 4.5-3 6" />
+                      <path d="M6 11c1.5-2 3.5-3 6-3" />
+                      <path d="M12 17c-2 2.5-3 4.5-3 6" />
+                    </svg>
+                  ),
+                },
+                {
+                  label: 'Vegetarisch',
+                  icon: (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="h-5 w-5"
+                    >
+                      <path d="M7 20h10" />
+                      <path d="M10 20c5.5-2.5 8-8.5 8-14-3 0-7 1-9 4.5C7 7 4.5 4 2 4c0 5.5 2.5 11.5 8 16z" />
+                    </svg>
+                  ),
+                },
+              ].map((badge) => (
+                <div key={badge.label} className="group relative flex flex-col items-center gap-1.5">
+                  <span className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-[#1a7a4f] text-[#1a7a4f] transition-colors group-hover:bg-[#1a7a4f] group-hover:text-white">
+                    {badge.icon}
+                  </span>
+                  <span className="text-[0.6rem] uppercase tracking-[0.12em] text-textMuted">{badge.label}</span>
+                </div>
+              ))}
             </div>
 
             {product.organic && (
