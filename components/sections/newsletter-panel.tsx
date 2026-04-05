@@ -73,8 +73,8 @@ export default function NewsletterPanel({
                     required
                     value={email}
                     onChange={(event) => setEmail(event.target.value)}
-                    placeholder="Deine E-Mail-Adresse"
-                    className="min-h-[52px] flex-1 rounded-full border border-goldAccent/40 bg-background/12 px-5 text-background placeholder:text-background/60 focus:border-goldAccent focus:ring-0"
+                    placeholder="Ihre E-Mail"
+                    className="min-h-[52px] flex-1 rounded-full border border-goldAccent/40 bg-background/12 px-5 text-background placeholder:text-goldAccent focus:border-goldAccent focus:ring-0"
                   />
                   <button
                     type="submit"
