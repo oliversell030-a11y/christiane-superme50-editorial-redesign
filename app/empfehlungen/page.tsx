@@ -10,8 +10,13 @@ function SolisCard({ product }: { product: typeof solisProducts[number] }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <article className="overflow-hidden rounded-[1.8rem] border border-line/60 bg-surface/80 shadow-panel">
-      <div className="relative aspect-square">
+    <a
+      href={product.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block overflow-hidden rounded-[1.8rem] border border-line/60 bg-surface/80 shadow-panel transition-transform hover:-translate-y-1"
+    >
+      <div className="relative aspect-[4/3]">
         <Image
           src={product.image}
           alt={product.title}
@@ -21,23 +26,14 @@ function SolisCard({ product }: { product: typeof solisProducts[number] }) {
         />
       </div>
       <div className="p-6">
-        <h3 className="font-display text-[1.6rem] leading-[1.02] tracking-[-0.03em] text-goldAccent">
+        <h3 className="font-display text-[1.2rem] leading-[1.08] tracking-[-0.02em] text-goldAccent">
           {product.title}
         </h3>
         <p className="mt-3 text-sm leading-7 text-textMuted">{product.description}</p>
         <div className="mt-5 flex flex-wrap gap-3">
-          <a
-            href={product.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.16em] text-goldAccent"
-          >
-            Zum Produkt
-            <ArrowRight className="h-4 w-4" strokeWidth={1.5} />
-          </a>
           <button
             type="button"
-            onClick={() => setOpen(!open)}
+            onClick={(e) => { e.preventDefault(); setOpen(!open); }}
             className="inline-flex items-center gap-1 text-[0.76rem] uppercase tracking-[0.16em] text-textMuted"
           >
             Produktinfo
@@ -50,7 +46,7 @@ function SolisCard({ product }: { product: typeof solisProducts[number] }) {
           </div>
         )}
       </div>
-    </article>
+    </a>
   );
 }
 
@@ -76,13 +72,13 @@ export default function EmpfehlungenPage() {
             title="Christianes tägliche Begleiter aus reiner Pflanzenkraft."
           />
 
-          <div className="mt-8 grid gap-6 md:grid-cols-2">
+          <div className="mt-8 grid gap-5 grid-cols-2 lg:grid-cols-4">
             {solisProducts.map((product) => (
               <SolisCard key={product.slug} product={product} />
             ))}
           </div>
 
-          <div className="mt-10 overflow-hidden rounded-[2rem] border border-line/60 shadow-panel">
+          <div className="mx-auto mt-10 max-w-2xl overflow-hidden rounded-[2rem] border border-line/60 shadow-panel">
             <video
               controls
               preload="metadata"
