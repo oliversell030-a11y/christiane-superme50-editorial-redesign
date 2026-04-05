@@ -8,7 +8,7 @@ function SolisCard({ product }: { product: typeof solisProducts[number] }) {
   return (
     <Link
       href={`/empfehlungen/${product.slug}`}
-      className="block overflow-hidden rounded-[1.8rem] border border-line/60 bg-surface/80 shadow-panel transition-transform hover:-translate-y-1 hover:border-goldAccent/60"
+      className="block overflow-hidden rounded-[1.8rem] border border-line/60 bg-[linear-gradient(180deg,rgba(255,251,245,0.92),rgba(239,230,217,0.95))] shadow-panel transition-transform hover:-translate-y-1 hover:border-goldAccent/60"
     >
       <div className="relative aspect-square">
         <Image
