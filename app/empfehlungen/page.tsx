@@ -8,15 +8,15 @@ function SolisCard({ product }: { product: typeof solisProducts[number] }) {
   return (
     <Link
       href={`/empfehlungen/${product.slug}`}
-      className="block overflow-hidden rounded-[1.8rem] border border-line/60 bg-surface/80 shadow-panel transition-transform hover:-translate-y-1"
+      className="block overflow-hidden rounded-[1.8rem] border border-line/60 bg-surface/80 shadow-panel transition-transform hover:-translate-y-1 hover:border-goldAccent/60"
     >
-      <div className="relative aspect-[4/3]">
+      <div className="relative aspect-square">
         <Image
-          src={product.image}
+          src={product.images[0]}
           alt={product.title}
           fill
           className="object-cover"
-          sizes="(max-width: 768px) 100vw, 50vw"
+          sizes="(max-width: 768px) 50vw, 25vw"
         />
       </div>
       <div className="p-6">
@@ -46,26 +46,31 @@ export default function EmpfehlungenPage() {
 
       <section className="py-14 md:py-20">
         <div className="mx-auto w-[min(1240px,calc(100%-24px))] md:w-[min(1240px,calc(100%-40px))]">
-          <SectionIntro
-            eyebrow="Solis Superfoods"
-            title="Christianes tägliche Begleiter aus reiner Pflanzenkraft."
-          />
+          <div className="rounded-[2.4rem] bg-[#FAF6F1] px-6 py-10 md:px-10 md:py-14">
+            <SectionIntro
+              eyebrow="Solis Superfoods"
+              title="Christianes tägliche Begleiter aus reiner Pflanzenkraft."
+            />
 
-          <div className="mt-8 grid gap-5 grid-cols-2 lg:grid-cols-4">
-            {solisProducts.map((product) => (
-              <SolisCard key={product.slug} product={product} />
-            ))}
-          </div>
+            <div className="mt-8 grid gap-5 grid-cols-2 lg:grid-cols-4">
+              {solisProducts.map((product) => (
+                <SolisCard key={product.slug} product={product} />
+              ))}
+            </div>
 
-          <div className="mx-auto mt-10 max-w-2xl overflow-hidden rounded-[2rem] border border-line/60 shadow-panel">
-            <video
-              controls
-              preload="metadata"
-              className="w-full"
-              poster="/images/shop/solis-green-medley.jpg"
-            >
-              <source src="/media/solis-brand.mp4" type="video/mp4" />
-            </video>
+            <p className="eyebrow text-center">Über Solis</p>
+            <p className="mx-auto mt-2 max-w-md text-center text-sm leading-7 text-textMuted">
+              Reine Pflanzenkraft, ethisch angebaut, ohne künstliche Zusätze.
+            </p>
+            <div className="mx-auto mt-10 max-w-xl overflow-hidden rounded-[2rem] border border-line/60 shadow-panel">
+              <video
+                controls
+                preload="metadata"
+                className="w-full"
+              >
+                <source src="/media/solis-brand.mp4" type="video/mp4" />
+              </video>
+            </div>
           </div>
         </div>
       </section>
