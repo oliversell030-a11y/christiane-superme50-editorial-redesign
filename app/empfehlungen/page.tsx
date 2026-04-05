@@ -67,6 +67,7 @@ export default function EmpfehlungenPage() {
                 controls
                 preload="metadata"
                 className="w-full"
+                poster="/images/shop/solis-green-medley-pulver.jpg"
               >
                 <source src="/media/solis-brand.mp4" type="video/mp4" />
               </video>
