@@ -178,11 +178,17 @@ export const solisProducts = [
     images: ['/images/shop/solis-green-medley.jpg', '/images/shop/solis-green-medley-pulver.jpg', '/images/shop/solis-green-medley-drink.jpg'],
     href: 'https://ww1.lifeplus.com/de/de/product-details/5369/solis-green-medley',
     description: '27 nährstoffreiche Zutaten aus grünem Blattgemüse, Adaptogenen und Pflanzenextrakten. Bio, vegan, glutenfrei.',
-    content: `Green Medley bringt 27 sorgfältig ausgewählte Zutaten in ein einziges Pulver. Chlorella, Spirulina und Moringa liefern die grüne Basis. Dazu kommen Adaptogene wie Maca und Rosenwurz, die den Körper bei Stress unterstützen, ohne ihn aufzuputschen.
+    organic: true,
+    content: `Nährstoffreiches grünes Blattgemüse, Adaptogene und erfrischende Pflanzenextrakte, das natürliche Aroma gefriergetrockneter Früchte aus biologischem Anbau: Green Medley ist für jeden das Richtige.
 
-Das Pulver schmeckt frisch und leicht fruchtig, weil gefriergetrocknete Himbeeren und Ananas mit drin sind. Ein gestrichener Messlöffel in Wasser oder Saft reicht. Wer grüne Superfoods noch nicht kennt, fängt am besten mit einer halben Portion an und steigert langsam.
+Reine starke Pflanzenkraft für Vitalität und natürliches Wohlbefinden
+Green Medley ist eine starke Kombination natürlich nährstoffdichter Inhaltstoffe. Jeder der 27 Inhaltsstoffe wurde sorgfältig ausgewählt, um nicht nur maximale Nährstoffe, sondern auch deren optimales Zusammenspiel in einem frischen, leicht gesüßten Pulver zu erzielen. Dieses adaptogene Bio-Superfood voller natürlicher Vitamine, Mineralstoffe, Phytonährstoffe und Antioxidantien überzeugt in jeder Hinsicht.
 
-Alle Zutaten stammen aus biologischem Anbau. Kein Zucker, keine künstlichen Süßstoffe, nur ein Hauch Stevia. Vegan und glutenfrei.`,
+Tipp:
+Falls Sie nährstoffreiches grünes Blattgemüse noch nicht kennen, beginnen Sie mit ¼ bis zu 1/2 Messlöffel und erhöhen Sie die Menge dann im Laufe der Zeit.
+
+Über Solis von Lifeplus
+Unsere Solis Superfoods sind nach der Leben spendenden Sonne benannt und stehen für mehr Gesundheit und Wellness. Sie helfen Ihnen, sich natürlich ausgeglichen und in bester Form zu fühlen – eine Superfood-Synthese für ein Supergefühl. Wir verwenden nur die hochwertigsten, ethisch einwandfreien Inhaltsstoffe und keine künstlichen Süßstoffe für unsere reinen einzigartigen Mischungen aus biologischem Anbau. Damit unterstützen wir auch die Gemeinden in den Anbaugebieten. Das ist die reinste Kraft der Pflanzen!`,
     details: `Art.-Nr. 5369 / 171 g — 30 Portionen
 
 Durchschnittsgehalt pro Portion (5,7 g):
@@ -198,13 +204,27 @@ Nahrungsergänzungsmittel sind kein Ersatz für eine ausgewogene und abwechslung
     images: ['/images/shop/solis-golden-milk.jpg', '/images/shop/solis-golden-milk-pulver.jpg', '/images/shop/solis-golden-milk-drink.jpg', '/images/shop/solis-golden-milk-glas.jpg'],
     href: 'https://ww1.lifeplus.com/de/de/product-details/5379/solis-golden-milk',
     description: 'Ayurvedisch inspiriert: Kurkuma, Ashwagandha, Shiitake und wärmende Gewürze in Kokosmilch. Vegan, glutenfrei.',
-    content: `Golden Milk ist von der ayurvedischen Tradition inspiriert: Kurkuma, Ashwagandha, Shiitake und wärmende Gewürze wie Zimt, Ingwer und Kardamom in einer Basis aus Kokosmilchpulver.
+    organic: false,
+    content: `Ein klassisches ayurvedisches Rezept ist die Inspiration für Solis Golden Milk, ein wärmendes, aromatisches Getränk, das Ihnen hilft, sich entspannt, erfrischt und allem gewachsen zu fühlen.
 
-Das Ergebnis ist ein Getränk, das beruhigt, wärmt und den Abend weicher macht. Einen Messlöffel in warme Milch oder eine pflanzliche Alternative einrühren. Wer mag, gibt einen Löffel Honig dazu.
+Solis Golden Milk bietet durch die Kombination aus Kurkuma, KSM-66®-Ashwagandha, Glycin, Shiitake, Ingwerwurzel und einer Vielzahl synergetischer Gewürze den einzigartigen Geschmack, der beruhigend, wärmend und entspannend wirkt. Die Basis aus Kokosmilchpulver erhöht die synergetischen und sättigenden Effekte und die Bioverfügbarkeit.
 
-Golden Milk lässt sich auch in Smoothies, Joghurt oder sogar Currys mischen. Ashwagandha und Glycin unterstützen Entspannung und erholsamen Schlaf. Das Pulver enthält Kurkuma und kann Kleidung verfärben.
+Um dieses dynamische Superfood optimal zu genießen, verrühren Sie einen Messlöffel Solis Golden Milk mit warmer pflanzlicher oder herkömmlicher Milch (oder verwenden Sie einen Milchaufschäumer). Das Ergebnis ist jedes Mal ein duftendes Geschmackserlebnis. Solis Golden Milk enthält einen Hauch Stevia, schmeckt jedoch nicht süß. Sie können daher ganz nach Ihrem Geschmack Ihr bevorzugtes Süßungsmittel hinzugeben, z. B. Honig.
 
-Vegan und glutenfrei. Kein Bio-Siegel, weil die enthaltene Aminosäure Glycin eine Bio-Zertifizierung ausschließt.`,
+Oder mischen Sie Solis Golden Milk-Pulver in Milchshakes, Smoothies, Currys, Joghurts, Dressings oder Dips. Ob herzhaft oder süß: Ihrer kulinarischen Kreativität sind keine Grenzen gesetzt.
+
+Solis Golden Milk kann zu erholsamem Schlaf beitragen, aber auch den ganzen Tag hindurch für einen köstlichen Moment der Entspannung sorgen.
+
+*Solis Golden Milk enthält Kurkuma und kann daher Kleidung und andere Oberflächen verfärben.
+
+Solis Golden Milk ist das einzige Solis Superfood-Pulverprodukt ohne „Bio"-Kennzeichnung. Der Grund dafür: Produkte, die Aminosäuren enthalten, sind von der „Bio"-Zertifizierung ausgeschlossen. Dies gilt unabhängig vom Anteil der Aminosäuren am Produkt und ungeachtet der Tatsache, dass Aminosäuren von Natur aus in Lebensmitteln und im menschlichen Körper vorkommen. Da die Aminosäure Glycin eine wichtige Komponente von Solis Golden Milk ist, haben wir beschlossen, auf die „Bio"-Zertifizierung zu verzichten, um diesen Inhaltsstoff im Produkt zu behalten.
+
+Informationen zu Solis Superfoods von Lifeplus
+Unsere Solis Superfoods sind nach der Leben spendenden Sonne benannt und stehen für Gesundheit und Wellness. Sie helfen Ihnen, sich natürlich ausgeglichen und in bester Form zu fühlen – eine Superfood-Synthese für ein Supergefühl. Wir verwenden nur die hochwertigsten, ethisch einwandfreien Inhaltsstoffe und keine künstlichen Süßstoffe: Das ist die reinste Kraft der Pflanzen.
+
+Glutenfrei
+
+Enthält 182g`,
     details: `Art.-Nr. 5379 / 182 g — 30 Portionen
 
 Durchschnittsgehalt pro Portion (6,0 g):
@@ -220,11 +240,15 @@ Nahrungsergänzungsmittel sind kein Ersatz für eine ausgewogene und abwechslung
     images: ['/images/shop/solis-cacao-boost.jpg', '/images/shop/solis-cacao-boost-pulver.jpg', '/images/shop/solis-cacao-boost-tasse.jpg'],
     href: 'https://ww1.lifeplus.com/de/de/product-details/5371/solis-cacao-boost',
     description: 'Bio-Rohkakao mit Maca, Reishi und Chaga. Schokoladig, nahrhaft, ohne Zucker. Bio, vegan, glutenfrei.',
-    content: `Cacao Boost kombiniert ecuadorianischen Bio-Rohkakao mit Maca, Reishi-Pilz, Chaga und Zimt. Das Ergebnis schmeckt schokoladig und vollmundig, ganz ohne zugesetzten Zucker.
+    organic: true,
+    content: `Aufgrund ihrer hohen Nährstoffdichte zählen Rohkakao, Maca und Reishi-Pilze zu den besten Superfoods. In dieser Mischung kombinieren wir köstlichen Bio-Rohkakao aus Ecuador mit Adaptogenen, Reishi-Pilzen, Maca sowie Zimt und Lúcuma zu einem köstlichen und vielseitigen Superfood.
 
-Wer abends Lust auf Schokolade hat, kann stattdessen einen Messlöffel in warme Milch rühren. Reishi und Chaga sind Vitalpilze, die in der Naturheilkunde seit Jahrhunderten geschätzt werden. Maca bringt milde Energie ohne Koffein.
+Wenn Sie den Geschmack von Schokolade gerne ohne den ganzen zusätzlichen Zucker genießen, können Sie dieses Verlangen stillen, indem Sie das Pulver mit warmem Wasser, warmer Milch (oder Milchalternative) oder einfach mit Ihrem Lifeplus Daily mischen. Das schmeckt der ganzen Familie!
 
-Das Pulver passt auch in Smoothies, Porridge oder Joghurt. Alle Zutaten aus biologischem Anbau. Vegan und glutenfrei.`,
+Probieren Sie Solis Cacao Boost gleich heute und ganz wie Sie es möchten, um Ihren Gaumen zu beglücken und das Verlangen nach Schokolade zu stillen!
+
+Über Solis von Lifeplus
+Unsere Solis Superfoods sind nach der Leben spendenden Sonne benannt und stehen für mehr Gesundheit und Wellness. Sie helfen Ihnen, sich natürlich ausgeglichen und in bester Form zu fühlen – eine Superfood-Synthese für ein Supergefühl. Wir verwenden nur die hochwertigsten, ethisch einwandfreien Inhaltsstoffe und keine künstlichen Süßstoffe für unsere reinen einzigartigen Mischungen aus biologischem Anbau. Damit unterstützen wir auch die Gemeinden in den Anbaugebieten. Das ist die reinste Kraft der Pflanzen!`,
     details: `Art.-Nr. 5371 / 210 g — 30 Portionen
 
 Durchschnittsgehalt pro Portion (7,0 g):
@@ -240,11 +264,24 @@ Nahrungsergänzungsmittel sind kein Ersatz für eine ausgewogene und abwechslung
     images: ['/images/shop/solis-purple-flash.jpg', '/images/shop/solis-purple-flash-pulver.jpg', '/images/shop/solis-purple-flash-drink.jpg'],
     href: 'https://ww1.lifeplus.com/de/de/product-details/5370/solis-purple-flash',
     description: 'Geballte Beerenkraft: Aronia, Açaí, Heidelbeere, Maqui, Granatapfel und mehr. Bio, vegan, glutenfrei.',
-    content: `Purple Flash packt elf der nährstoffreichsten Beeren und Früchte in einen Teelöffel: Aronia, Açaí, Heidelbeere, Maqui, Granatapfel, Brombeere, schwarze Johannisbeere, Holunder, Baobab und Traubensaft. Dazu kommt Löwenmähne, ein Vitalpilz, der für seine unterstützende Wirkung auf die geistige Klarheit bekannt ist.
+    organic: true,
+    content: `Vollgepackt mit Beeren aus nährstoffreichem Boden und natürlich auftretenden Vitaminen und Mineralstoffen: Purple Flash ist ein natürlich gutes Superfood-Pulver.
 
-Der Geschmack ist beerig und natürlich, ohne Süßstoffe oder künstliche Aromen. Einfach in Wasser, einen Smoothie oder Joghurt rühren.
+Starten Sie durch – mit idealen Antioxidantien
+Purple Flash Superfood-Pulver kombiniert eine einzigartige, köstliche Mischung aus einigen der nährstoffreichsten Superfrüchte – Aroniabeere, Açai-Beere, Blaubeere, Maqui-Beere, Granatapfel, Brombeere, schwarze Johannisbeere, schwarzer Holunder, Traubensaftpulver und die erstaunliche Baobab-Frucht aus Afrika.
 
-Beeren stehen bei Superfrüchten ganz oben, weil ihre intensiven Farben auf einen hohen Gehalt an Antioxidantien hinweisen. Purple Flash macht es leicht, diese Vielfalt täglich mitzunehmen. Alle Zutaten aus biologischem Anbau. Vegan und glutenfrei.`,
+Superfrüchte sind nährstoffdicht, fördern das gesunde Erscheinungsbild und das Wohlbefinden und unterstützen die Gesundheit in allen Lebensabschnitten. Beeren stehen auf der Liste der Superfrüchte oft ganz oben, denn sie haben einen hohen Gehalt an Antioxidantien, wie an ihren intensiven Farben und dem zumeist süßen Geschmack zu erkennen ist.
+
+Purple Flash enthält keine Süßstoffe oder künstlichen Aromen. Der ganze Geschmack kommt von den gefriergetrockneten Beeren, die in der Mischung enthalten sind. Purple Flash ist super und gibt Ihrer Routine ganz unkompliziert einen Energieschub. Mischen Sie es einfach mit Wasser, Lifeplus Daily, Smoothies oder sogar Jogurt! Nahrhaft für Erwachsene und für Kinder.
+
+Starten Sie durch mit Purple Flash – alle Vorteile einiger der nährstoffdichtesten Früchte der Welt, einfach in einem Teelöffel.
+
+Über Solis von Lifeplus
+Unsere Solis Superfoods sind nach der Leben spendenden Sonne benannt und stehen für mehr Gesundheit und Wellness. Sie helfen Ihnen, sich natürlich ausgeglichen und in bester Form zu fühlen – eine Superfood-Synthese für ein Supergefühl. Wir verwenden nur die hochwertigsten, ethisch einwandfreien Inhaltsstoffe und keine künstlichen Süßstoffe für unsere reinen einzigartigen Mischungen aus biologischem Anbau. Damit unterstützen wir auch die Gemeinden in den Anbaugebieten. Das ist die reinste Kraft der Pflanzen!
+
+Glutenfrei
+
+Enthält 192 g`,
     details: `Art.-Nr. 5370 / 192 g — 30 Portionen
 
 Durchschnittsgehalt pro Portion (6,4 g):

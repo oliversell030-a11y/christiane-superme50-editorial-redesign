@@ -70,6 +70,18 @@ export default function SolisProductPage({
               ))}
             </div>
 
+            {product.organic && (
+              <div className="mt-5 flex items-center gap-3">
+                <Image
+                  src="/images/shop/usda-organic-seal.png"
+                  alt="USDA Organic"
+                  width={48}
+                  height={48}
+                />
+                <span className="text-xs leading-5 text-textMuted">Zertifiziert biologisch</span>
+              </div>
+            )}
+
             <div className="mt-8">
               <a
                 href={product.href}

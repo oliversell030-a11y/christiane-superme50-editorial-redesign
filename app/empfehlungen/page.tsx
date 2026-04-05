@@ -46,7 +46,7 @@ export default function EmpfehlungenPage() {
 
       <section className="py-14 md:py-20">
         <div className="mx-auto w-[min(1240px,calc(100%-24px))] md:w-[min(1240px,calc(100%-40px))]">
-          <div className="rounded-[2.4rem] bg-[#FAF6F1] px-6 py-10 md:px-10 md:py-14">
+          <div className="rounded-[2.4rem] bg-[linear-gradient(180deg,rgba(224,232,217,0.84),rgba(190,205,179,0.92))] px-6 py-10 md:px-10 md:py-14">
             <SectionIntro
               eyebrow="Solis Superfoods"
               title="Christianes tägliche Begleiter aus reiner Pflanzenkraft."
@@ -62,7 +62,7 @@ export default function EmpfehlungenPage() {
             <p className="mx-auto mt-2 max-w-md text-center text-sm leading-7 text-textMuted">
               Reine Pflanzenkraft, ethisch angebaut, ohne künstliche Zusätze.
             </p>
-            <div className="mx-auto mt-10 max-w-xl overflow-hidden rounded-[2rem] border border-line/60 shadow-panel">
+            <div className="mx-auto mt-10 max-w-3xl overflow-hidden rounded-[2rem] border border-line/60 shadow-panel">
               <video
                 controls
                 preload="metadata"
