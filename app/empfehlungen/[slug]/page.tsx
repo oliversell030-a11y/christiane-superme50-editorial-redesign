@@ -59,15 +59,37 @@ export default function SolisProductPage({
               {product.description}
             </p>
 
-            <div className="mt-6 flex flex-wrap gap-2">
-              {['Vegan', 'Glutenfrei', '30 Portionen'].map((tag) => (
-                <span
-                  key={tag}
-                  className="rounded-full border border-goldAccent/30 px-3 py-1 text-[0.7rem] uppercase tracking-[0.12em] text-textMuted"
+            <div className="mt-6 flex items-center gap-3">
+              <span
+                title="Vegan"
+                className="flex h-10 w-10 cursor-default items-center justify-center rounded-full bg-[#1a7a4f] text-[0.65rem] font-bold tracking-wide text-white"
+              >
+                V
+              </span>
+              <span
+                title="Glutenfrei"
+                className="flex h-10 w-10 cursor-default items-center justify-center rounded-full bg-[#1a7a4f] text-[0.65rem] font-bold tracking-wide text-white"
+              >
+                GF
+              </span>
+              <span
+                title="Geeignet für Vegetarier"
+                className="flex h-10 w-10 cursor-default items-center justify-center rounded-full bg-[#1a7a4f] text-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="h-5 w-5"
                 >
-                  {tag}
-                </span>
-              ))}
+                  <path d="M7 20h10" />
+                  <path d="M10 20c5.5-2.5 8-8.5 8-14-3 0-7 1-9 4.5C7 7 4.5 4 2 4c0 5.5 2.5 11.5 8 16z" />
+                </svg>
+              </span>
             </div>
 
             {product.organic && (
@@ -124,6 +146,18 @@ export default function SolisProductPage({
                 <p key={i}>{paragraph}</p>
               ))}
             </div>
+          </div>
+
+          <div className="mt-8 text-center">
+            <a
+              href={product.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-goldAccent px-6 py-3 text-[0.76rem] uppercase tracking-[0.16em] text-white transition-transform hover:-translate-y-0.5"
+            >
+              Im Shop ansehen
+              <ExternalLink className="h-4 w-4" strokeWidth={1.5} />
+            </a>
           </div>
 
           <div className="mt-10">
